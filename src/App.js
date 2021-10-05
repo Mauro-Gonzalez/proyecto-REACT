@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import Navbar from "./components/Navbar";
 import Cards from "./components/Cards";
+import ItemCount from "./components/itemCount"
 
 import "./App.css";
 
@@ -11,15 +12,15 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <div className="app">
-    <Navbar />
-    <Cards />
-
+      <body>
+      <div>
+       <Navbar />
       </div>
-     
-     
-    );
-  }
-}
+      <ItemCount/>
+       <Cards />
 
+      </body>
+    )
+}
+}
 export default App;

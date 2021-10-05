@@ -14,7 +14,7 @@ const Navbar =() =>{
           <ReactBootstrap.Nav.Link href="#home">Home</ReactBootstrap.Nav.Link>
           <ReactBootstrap.Nav.Link href="#features">Features</ReactBootstrap.Nav.Link>
           <ReactBootstrap.Nav.Link href="#pricing">Pricing</ReactBootstrap.Nav.Link>
-          <div style={{fontSize:"20px", color:"red",marginLeft:"30%"}}>
+          <div style={{fontSize:"20px", color:"red",marginLeft:"30%", cursor:"pointer"}}>
               <FontAwesomeIcon icon={faShoppingCart}/>
           </div>
 
