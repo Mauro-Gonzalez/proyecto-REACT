@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 
 import Navbar from "./components/Navbar";
-import Cards from "./components/Cards";
-import ItemCount from "./components/itemCount"
+import  ItemListCointainter from "./components/ItemListConteiner";
+import ItemCount from "./components/itemCount";
 
 import "./App.css";
 
@@ -15,10 +15,11 @@ class App extends Component {
       <body>
       <div>
        <Navbar />
-      </div>
-      <ItemCount/>
-       <Cards />
 
+      </div>
+      < ItemListCointainter greeting="cumpliendo la consigna"/>
+      <ItemCount />
+      
       </body>
     )
 }

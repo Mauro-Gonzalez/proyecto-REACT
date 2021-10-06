@@ -32,7 +32,7 @@ const ItemCount =() =>{
     return(
         <div style={{display:'flex'}}>
             <button onClick={handleDecrement}>restar</button>
-            <p  style={{margin:"1px 5px 1px 5px"}}>{counter}</p>
+            <p  style={{margin:"1px 5px 1px 5px", color:"white"}}>{counter}</p>
             <button onClick={handleIncrement}>sumar</button>
            
         </div>    

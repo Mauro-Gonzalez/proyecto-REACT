@@ -1,5 +1,6 @@
 body {
     font-family: 'Oxygen', sans-serif;
+
     height: 100vh;
     background: rgb(238, 69, 64);
     background: linear-gradient(
@@ -10,4 +11,5 @@ body {
       rgba(81, 10, 50, 1) 45%,
       rgba(45, 20, 44, 1) 100%
     );
+
   }
