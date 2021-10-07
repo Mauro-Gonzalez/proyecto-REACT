@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "./Card.css";
 
 
-function Card({ imageSource, title, text, url }) {
+function Card({ imageSource, title, price, url }) {
     return (
         <div className="card text-center bg-dark animate__animated animate__fadeInUp">
       <div className="overflow">
@@ -13,9 +13,7 @@ function Card({ imageSource, title, text, url }) {
         <h4 className="card-title">{title}</h4>
         <p className="card-text text-secondary">
 
-        {text
-            ? text
-            : "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam deserunt fuga accusantium excepturi quia, voluptates obcaecati nam in voluptas perferendis velit harum dignissimos quasi ex? Tempore repellat quo doloribus magnam."}
+       {price}
         </p>
         <a
           href={url ? url : "#!"}
@@ -23,7 +21,7 @@ function Card({ imageSource, title, text, url }) {
           className="btn btn-outline-secondary border-0"
           rel="noreferrer"
         >
-          Go to {title}
+          ver mas sobre {title}
         </a>
       </div>
     </div>
@@ -32,7 +30,7 @@ function Card({ imageSource, title, text, url }) {
 
 Card.propTypes = {
     title: PropTypes.string.isRequired,
-    text: PropTypes.string,
+    price: PropTypes.string,
     url: PropTypes.string,
     imageSource: PropTypes.string
   };
