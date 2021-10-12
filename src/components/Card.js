@@ -3,25 +3,25 @@ import PropTypes from "prop-types";
 import "./Card.css";
 
 
-function Card({ imageSource, title, price, url }) {
+function Card({data}) {
     return (
         <div className="card text-center bg-dark animate__animated animate__fadeInUp">
       <div className="overflow">
-        <img src={imageSource} alt="a wallpaper" className="card-img-top" />
+        <img src={data.thumbnailUrl} alt="a wallpaper" className="card-img-top" />
       </div>
       <div className="card-body text-light">
-        <h4 className="card-title">{title}</h4>
+        <h4 className="card-title">{data.title}</h4>
         <p className="card-text text-secondary">
 
-       {price}
+       {data.albumId}
         </p>
         <a
-          href={url ? url : "#!"}
+          href={data.url ? data.url : "#!"}
           target="_blank"
           className="btn btn-outline-secondary border-0"
           rel="noreferrer"
         >
-          ver mas sobre {title}
+          ver mas sobre {data.title}
         </a>
       </div>
     </div>

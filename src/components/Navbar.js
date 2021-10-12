@@ -2,7 +2,7 @@ import "./Navbar.css";
 import * as ReactBootstrap from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import Cards from "./Cards";
+
 
 
 
@@ -26,7 +26,7 @@ const Navbar =() =>{
                 </ReactBootstrap.Container>
             </ReactBootstrap.Navbar> 
         
-        <Cards/>
+       
          </>
     )
 }
