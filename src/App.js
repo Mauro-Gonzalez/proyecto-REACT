@@ -1,26 +1,38 @@
 import React, { Component } from "react";
 
+import {BrowserRouter as Router, Route , Switch} from "react-router-dom"
+
 import Navbar from "./components/Navbar";
-import  ItemListCointainter from "./components/ItemListConteiner";
-import ItemCount from "./components/itemCount";
+
 
 import "./App.css";
 
+//views//
+import Home from "./views/Home";
+import Categorias from "./views/Categorias";
+import ItemDetail from "./views/ItemDetail";
 
 
 
 class App extends Component {
-  render() {
+  render(){
     return (
+      
       <body>
-      <div>
+      <Router>
+        <Switch>
+        <div>
        <Navbar />
+       <Route path="/" exact component={Home}/>
+       <Route path="/Categorias" exact component={Categorias}/>
+       <Route path="/detail/:id" component={ItemDetail}/>
+        </div>
+        </Switch>
+        </Router>
 
-      </div>
-      < ItemListCointainter greeting="cumpliendo la consigna"/>
-      <ItemCount />
       
       </body>
+      
     )
 }
 }
