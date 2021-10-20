@@ -1,17 +1,17 @@
 import React, {useState,useEffect} from 'react';
-import { ResponsiveEmbed } from 'react-bootstrap';
-import Card from "./Card";
-import { Link } from "react-router-dom";
 
-function Cards() {
+import Card from "./Card";
+
+
+function Cards(URL) {
  
 
   const [items,setItems]= useState([]);
   
 
   useEffect(() => {
-   
-      fetch("https://jsonplaceholder.typicode.com/albums/1/photos")
+   URL="https://www.breakingbadapi.com/api/characters?category=Better+Call+Saul"
+      fetch(URL)
       .then((response) => response.json())
       .then((data) => setItems(data));
 
@@ -24,10 +24,10 @@ function Cards() {
           <div className="row">
             {items.map((item) => { 
               return (
-                <div className="col-md-4" key={item.id}>
-                <Link to={"/detail/${item.id}"}>
+                <div className="col-md-4" key={item.char_id}>
+                
                  <Card data={item}/>
-                </Link>
+               
                 
               </div>
               );
