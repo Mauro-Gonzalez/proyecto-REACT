@@ -1,9 +1,9 @@
 import Cards from "./Cards";
 
-const ItemListCointainter =({greeting}) =>{
+const ItemListCointainter =({tittle}) =>{
 return(
    <div>
-       <h3 style={{color:"white"}}>{greeting}</h3>
+       <h3 style={{color:"white"}}>{tittle}</h3>
 
        <Cards/>
 

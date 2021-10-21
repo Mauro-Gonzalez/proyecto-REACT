@@ -1,5 +1,9 @@
 import React,{useState,useEffect} from "react";
 import axios from "axios";
+import ItemCount from "../components/itemCount";
+
+
+
 
 const ItemDetail =({match}) =>{
     const [item,setItem]= useState([]);
@@ -9,7 +13,6 @@ const ItemDetail =({match}) =>{
         axios(`https://www.breakingbadapi.com/api/characters/${itemID}`)
         .then((res) => setItem(res.data));
     },[itemID]);
-
 
 
 
@@ -26,11 +29,10 @@ const ItemDetail =({match}) =>{
             <div className="card-body text-light">
               <h4 className="card-title">{item.name}</h4>
               <p className="card-text text-secondary">
-      
-             {item.albumId}
+             <ItemCount stock={5} /> 
               </p>
              
-             <p className="btn btn-outline-secondary border-0">ver mas sobre {item.name}</p>
+           
             
             </div>
           </div>

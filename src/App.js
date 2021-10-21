@@ -11,6 +11,7 @@ import "./App.css";
 import Home from "./views/Home";
 import Categorias from "./views/Categorias";
 import ItemDetail from "./views/ItemDetail";
+import Cart from "./views/Cart";
 
 
 
@@ -18,7 +19,7 @@ class App extends Component {
   render(){
     return (
       
-     <body>
+     <React.Fragment>
       <Router>
         <Switch>
         <div>
@@ -26,14 +27,15 @@ class App extends Component {
             <Navbar />
           </header>
              <Route path="/" exact component={Home}/>
-             <Route path="/Categorias" exact component={Categorias}/>
+             <Route path="/Categorias"component={Categorias}/>
              <Route path="/detail/:id" component={ItemDetail}/>
+             <Route path="/Cart"component={Cart}/>
         </div>
         </Switch>
         </Router>
 
       
-      </body>
+      </React.Fragment>
       
     )
 }
