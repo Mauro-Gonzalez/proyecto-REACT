@@ -15,8 +15,6 @@ const ItemDetail =({match}) =>{
     },[itemID]);
 
 
-
-
     return(
         <div className="container d-flex justify-content-center align-items-center h-100">
         <div className="row">
@@ -35,12 +33,18 @@ const ItemDetail =({match}) =>{
            
             
             </div>
+            <div className="container">
+            <a href="javascript: history.go(-1)">Volver atrás</a>
+            </div>
           </div>
            )
        })}
    </div>
    </div>
     )
+
+  
+    
 }
 
 

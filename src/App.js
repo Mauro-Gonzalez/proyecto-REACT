@@ -9,7 +9,7 @@ import "./App.css";
 
 //views//
 import Home from "./views/Home";
-import Categorias from "./views/Categorias";
+import Categoria2 from "./views/Categorias";
 import ItemDetail from "./views/ItemDetail";
 import Cart from "./views/Cart";
 
@@ -27,7 +27,7 @@ class App extends Component {
             <Navbar />
           </header>
              <Route path="/" exact component={Home}/>
-             <Route path="/Categorias"component={Categorias}/>
+             <Route path="/Categorias"component={Categoria2}/>
              <Route path="/detail/:id" component={ItemDetail}/>
              <Route path="/Cart"component={Cart}/>
         </div>

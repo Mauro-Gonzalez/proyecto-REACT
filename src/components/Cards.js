@@ -10,7 +10,7 @@ function Cards(URL) {
   
 
   useEffect(() => {
-   URL="https://www.breakingbadapi.com/api/characters?category=Better+Call+Saul"
+    URL="https://www.breakingbadapi.com/api/characters?category=Better+Call+Saul"
       fetch(URL)
       .then((response) => response.json())
       .then((data) => setItems(data));
