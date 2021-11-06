@@ -12,14 +12,15 @@ const Navbar =() =>{
         <>
             <ReactBootstrap.Navbar bg="dark" variant="dark">
                 <ReactBootstrap.Container>
-                    <ReactBootstrap.Navbar.Brand href="#home">ecommerce</ReactBootstrap.Navbar.Brand>
-                    <ReactBootstrap.Nav className="me-auto">
-                    <ReactBootstrap.Nav.Link><Link to="/">BCS</Link></ReactBootstrap.Nav.Link>
-                    <ReactBootstrap.Nav.Link><Link to="/Categorias">breaking bad</Link></ReactBootstrap.Nav.Link>
+                    <ReactBootstrap.Navbar.Brand href=""><Link to="/">MI COMERCIO</Link></ReactBootstrap.Navbar.Brand>
+                    <ReactBootstrap.Nav className="ms-auto">
+                    <ReactBootstrap.Nav.Link><Link to="/">Home</Link></ReactBootstrap.Nav.Link>
+                    <ReactBootstrap.Nav.Link><Link to="/Categorias">categorias</Link></ReactBootstrap.Nav.Link>
+                      <Link to="/Cart">
                         <div style={{ fontSize: "20px", color: "white", marginLeft: "30%", cursor: "pointer" }}>
                             <FontAwesomeIcon icon={faShoppingCart} />
                         </div>
-
+                        </Link>
                         <ReactBootstrap.Container>
                         </ReactBootstrap.Container>
                     </ReactBootstrap.Nav>

@@ -1,32 +1,46 @@
 import React,{useState,useEffect} from "react";
-import axios from "axios";
 import ItemCount from "../components/itemCount";
+import products from "../productsdata";
+import { actionTypes } from "../reducer";
+import {useStateValue} from "../StateProvider";
+
 
 
 
 
 const ItemDetail =({match}) =>{
-    const [item,setItem]= useState([]);
-    let itemID=match.params.id;
+   
+    let itemID=parseInt(match.params.id);
 
-    useEffect(() => {
-        axios(`https://www.breakingbadapi.com/api/characters/${itemID}`)
-        .then((res) => setItem(res.data));
-    },[itemID]);
 
+
+
+    const product= products.filter(x => x.id == itemID);
+    const [{basket}, dispatch]=useStateValue();
+    
+    const addToBasket=() => {
+      dispatch({
+        type: actionTypes.ADD_TO_BASKET,
+        item:product
+        
+      })
+      
+      
+      };
 
     return(
         <div className="container d-flex justify-content-center align-items-center h-100">
         <div className="row">
-       {item.map((item) =>{
+       {product.map((item) =>{
            return(
-            <div className="card text-center bg-dark animate__animated animate__fadeInUp">
+            <div key={item} className="card text-center bg-dark animate__animated animate__fadeInUp">
             <div className="overflow">
               <img src={item.img} alt="a wallpaper" className="card-img-top" style={{width:"200px"}} />
             </div>
             <div className="card-body text-light">
-              <h4 className="card-title">{item.name}</h4>
+              <h4 className="card-title">{item.Name}</h4>
               <p className="card-text text-secondary">
+              <button onClick={addToBasket}>agregar carrito</button>
              <ItemCount stock={5} /> 
               </p>
              

@@ -1,35 +1,25 @@
 import React, {useState,useEffect} from 'react';
-
+import { Link } from "react-router-dom";
 import Card from "./Card";
+import products from "../productsdata"
 
 
-function Cards(URL) {
+function Cards() {
  
 
-  const [items,setItems]= useState([]);
-  
 
-  useEffect(() => {
-    URL="https://www.breakingbadapi.com/api/characters?category=Better+Call+Saul"
-      fetch(URL)
-      .then((response) => response.json())
-      .then((data) => setItems(data));
-
-    
-  
-  },[]);
   
     return (
         <div className="container d-flex justify-content-center align-items-center h-100">
           <div className="row">
-            {items.map((item) => { 
+            {products.map((item) => { 
               return (
-                <div className="col-md-4" key={item.char_id}>
-                
+                <Link to={ `/detail/${item.id} `} className="col-md-3 col-xl-4 col-xxl-3 mb-5" style={{textDecoration:"none"}}>
+              <div key={item.id}>
                  <Card data={item}/>
-               
-                
               </div>
+              </Link>
+              
               );
               
             })}

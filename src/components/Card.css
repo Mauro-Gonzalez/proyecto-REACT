@@ -5,6 +5,7 @@
   
   .card-body {
     padding: 2rem 0 !important;
+
   }
   
   .card-text {
@@ -17,10 +18,11 @@
   }
   
   .card-img-top {
-    filter: grayscale(1);
+    
     transition: all 0.6s ease-in-out;
+    margin-top: 10px;
+    border:1px solid #f3faff;
+   
   }
   
-  .card-img-top:hover {
-    filter: grayscale(0);
-  }
+  
