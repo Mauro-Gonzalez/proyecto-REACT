@@ -4,7 +4,7 @@ import {useStateValue} from "../StateProvider";
 
 const Cart =() =>{
     const [{basket}, dispatch]=useStateValue();
-console.log(basket)
+
 
 
     return(

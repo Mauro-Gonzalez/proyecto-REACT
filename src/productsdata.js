@@ -1,6 +1,6 @@
 const products=[
     {"id":21,
-    "Name":"Fiat Uno",
+    "name":"Fiat Uno",
     "img":"https://i.ytimg.com/vi/jV2WhNDSYOA/hqdefault.jpg",
     "price":"400000 ars",
     "category":"Cars",
@@ -8,7 +8,7 @@ const products=[
     "description":"solo para entendidos"
     },
     {"id":12,
-    "Name":"Audi R8",
+    "name":"Audi R8",
     "img":"https://http2.mlstatic.com/D_NQ_NP_931508-MLA48073714813_102021-O.webp",
     "price":"210.000 usd",
     "category":"Cars",
@@ -17,7 +17,7 @@ const products=[
     
     },
     {"id":33,
-    "Name":"Nissan GTR R35",
+    "name":"Nissan GTR R35",
     "img":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nissan-gtr-2022-japon-portada-1631625941.jpg?crop=1.00xw:1.00xh;0,0&resize=980:*",
     "price":"300.000 usd",
     "card_description":"vr38 DETT biturbo 3.8",
@@ -26,7 +26,7 @@ const products=[
     
     },
     {"id":24,
-        "Name":"Zanella 50 V3 ",
+        "name":"Zanella 50 V3 ",
         "img":"https://http2.mlstatic.com/D_NQ_NP_686344-MLA43839754228_102020-O.webp",
         "price":"60.000 ars",
         "category":"motor-bike",
@@ -35,7 +35,7 @@ const products=[
         
         },
     {"id":1,
-        "Name":"",
+        "name":"",
         "img":"",
         "price":"",
         "category":"",
@@ -44,7 +44,7 @@ const products=[
         
         },
     {"id":1,
-        "Name":"",
+        "name":"",
         "img":"",
         "price":"",
         "category":"",
@@ -53,7 +53,7 @@ const products=[
         
         },
     {"id":1,
-        "Name":"",
+        "name":"",
         "img":"",
         "price":"",
         "category":"",
@@ -62,7 +62,7 @@ const products=[
         
         },
     {"id":1,
-        "Name":"",
+        "name":"",
         "img":"",
         "price":"",
         "category":"",

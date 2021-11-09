@@ -21,10 +21,18 @@ const ItemDetail =({match}) =>{
     const addToBasket=() => {
       dispatch({
         type: actionTypes.ADD_TO_BASKET,
-        item:product
+        item:{
+          id:product[0].id,
+          name:product[0].name,
+          img:product[0].img,
+          price:product[0].price,
+          card_description:product[0].card_description,
+          category:product[0].category,
+                          
+        }
         
       })
-      
+
       
       };
 
@@ -38,7 +46,7 @@ const ItemDetail =({match}) =>{
               <img src={item.img} alt="a wallpaper" className="card-img-top" style={{width:"200px"}} />
             </div>
             <div className="card-body text-light">
-              <h4 className="card-title">{item.Name}</h4>
+              <h4 className="card-title">{item.name}</h4>
               <p className="card-text text-secondary">
               <button onClick={addToBasket}>agregar carrito</button>
              <ItemCount stock={5} /> 

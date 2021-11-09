@@ -15,7 +15,7 @@ function Card({data}) {
         <img src={data.img} alt="a wallpaper" className="card-img-top" style={{width:"200px", height:"200px"}} />
       </div>
       <div className="card-body text-light" style={{position:"relative"}}>
-        <h4 className="card-title mt-1">{data.Name}</h4>
+        <h4 className="card-title mt-1">{data.name}</h4>
         <p className="mb-5">{data.card_description}</p>
         <div style={{position:"absolute", left:"30%",top:"30%"}}>
         <p className="card-text text-secondary mt-5">
