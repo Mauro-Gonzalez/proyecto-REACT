@@ -14,7 +14,7 @@ function Cards() {
           <div className="row">
             {products.map((item) => { 
               return (
-                <Link to={ `/detail/${item.id} `} className="col-md-3 col-xl-4 col-xxl-3 mb-5" style={{textDecoration:"none"}}>
+                <Link to={ `/detail/${item.id} `} className="col-md-6 col-xl-4 col-xxl-3 mb-5 container d-flex justify-content-center align-items-center h-100" style={{textDecoration:"none"}}>
               <div key={item.id}>
                  <Card data={item}/>
               </div>

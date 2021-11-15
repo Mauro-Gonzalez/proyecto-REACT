@@ -1,9 +1,11 @@
 import Cards from "./Cards";
 
+
 const ItemListCointainter =({tittle}) =>{
 return(
-   <div>
-       <h3 style={{color:"white"}}>{tittle}</h3>
+   <div className="col-12">
+       <h3 style={{paddingTop:"5%"}}>{tittle}</h3>
+
 
        <Cards/>
 

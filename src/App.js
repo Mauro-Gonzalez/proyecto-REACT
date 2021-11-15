@@ -24,7 +24,7 @@ class App extends Component {
       <Router>
         <Switch>
         <div>
-          <header style={{marginBottom:"20px"}}>
+          <header>
             <Navbar />
           </header>
              <Route path="/" exact component={Home}/>

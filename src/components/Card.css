@@ -1,7 +1,17 @@
+.card{
+  width:240px;
+  height:380px;
+  border-radius:15px;
+  border:1px solid;
+  transition: all 0.7s linear; 
+}
+
+
 .card:hover {
-    box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
-    transition: all 0.7s linear;
-  }
+  box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 21px -1px rgba(0,0,0,0.75);
+}
   
   .card-body {
     padding: 2rem 0 !important;
