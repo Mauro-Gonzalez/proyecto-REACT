@@ -1,20 +1,28 @@
 
 import {useStateValue} from "../StateProvider";
 import { actionTypes } from "../reducer";
+import { Link } from "react-router-dom";
 import { element } from "prop-types";
 
 
-const Cart =({match}) =>{
-  let itemID=parseInt(match.params.id);
+
+
+
+
+const Cart =() =>{
+  
     const [{cart}, dispatch]=useStateValue();
-    const e = (element) => element == itemID;
-    const index=cart.findIndex(e)
-console.log(index)
-  const removeItem=()=>  dispatch({
+   
+
+  const removeItem=(id)=>  dispatch({
+    
   type:actionTypes.REMOVE_ITEM,
- 
-  
-  
+  id:id
+})
+
+const clearCart=()=> dispatch({
+  type:actionTypes.CLEAR_CART,
+  cart:[]
 })
     
 
@@ -31,37 +39,36 @@ console.log(index)
         </div>
       </div>
 
-
-
       :
-
-
-
 
      <div className="container">
          <h1>carrito</h1>
-  <div className="container d-flex justify-content-center align-items-center h-100">
+  <div className="container justify-content-center align-items-center h-100">
         <div className="row">
-       {cart.map((item) =>{
-           return(
-            <div key={item} className="bg-dark animate__animated animate__fadeInUp d-flex  flex-row">
+{/**/}
+{cart?.map((item) => { 
+              return (
+                <div key={item} className="bg-dark animate__animated animate__fadeInUp d-flex  flex-row">
+        
+                <img src={item.img} alt="a wallpaper" className="card-img-top d-inline-block" style={{width:"200px"}} />
             
-              <img src={item.img} alt="a wallpaper" className="card-img-top d-inline-block" style={{width:"200px"}} />
-          
-           
-              <h4 className="card-title d-inline-block text-primary">{item.name}</h4>
-              <p className="card-text text-secondary d-inline-block"></p>
-             
-             
-          
-            <div className="d-inline-block">
-            <button onClick={removeItem}>borrar</button>
+                <Link to={ `/detail/${item.id} `} className="col-md-6 col-xl-4 col-xxl-3 mb-5 container d-flex justify-content-center align-items-center h-100" style={{textDecoration:"none"}}>
+                <h4 className="card-title d-inline-block text-primary">{item.name}</h4>
+                </Link>
+                <p className="card-text text-secondary d-inline-block"></p>
+               
+               
+            
+              <div className="d-inline-block">
+              <button onClick={() => removeItem(item.id)}>borrar</button>
+              </div>
             </div>
-          </div>
-           )
-       })}
+              );
+            })}              
    </div>
    </div>
+   <div style={{color:"white"}}>hola</div>
+   <button onClick={clearCart}>borrar todo</button>
     </div>
     )
 }

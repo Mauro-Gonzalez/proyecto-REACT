@@ -1,5 +1,5 @@
 
-import "./home.css"
+import "../SCSS/_home.scss"
 import  ItemListCointainter from "../components/ItemListConteiner";
 
 

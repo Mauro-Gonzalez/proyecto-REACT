@@ -1,7 +1,9 @@
 import PropTypes from "prop-types";
+import "../SCSS/_Card.scss";
 
 
-import "./Card.css";
+
+
 
 
 

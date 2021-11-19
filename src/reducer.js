@@ -4,7 +4,8 @@ export const initialState={
 
 export const actionTypes={
     ADD_TO_CART:"ADD_TO_CART",
-    REMOVE_ITEM:"REMOVE_ITEM"
+    REMOVE_ITEM:"REMOVE_ITEM",
+    CLEAR_CART:"CLEAR_CART"
 }
 
 const reducer =(state,action)=>{
@@ -26,7 +27,15 @@ const reducer =(state,action)=>{
         ...state,
         cart:newCart
     }
+
+    case "CLEAR_CART":
+        return{
+            cart:[]
+        }
         default: return state;
+
+
+
             
     }
    
