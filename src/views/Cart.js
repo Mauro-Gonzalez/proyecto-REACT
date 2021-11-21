@@ -9,6 +9,7 @@ import { element } from "prop-types";
 
 
 
+
 const Cart =() =>{
   
     const [{cart}, dispatch]=useStateValue();
@@ -32,12 +33,12 @@ const clearCart=()=> dispatch({
 
     return(
       
-      cart==0?
+      cart.length==0?
       <div className="container justify-content-center align-items-center">
         <div className="text-center" style={{marginTop:"5%", border:"solid 2px", width:"70%",margin:"auto"}}>
           <p style={{color:"white"}}>no hay elementos en el carrito</p>
         </div>
-      </div>
+      </div>             
 
       :
 
