@@ -13,6 +13,7 @@ import "../SCSS/_itemDetail.scss"
 const ItemDetail =({match}) =>{
    
     let itemID=parseInt(match.params.id);
+    console.log(match)
 
 
 
