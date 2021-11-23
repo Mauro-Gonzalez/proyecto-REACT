@@ -56,7 +56,7 @@ console.log(products)
                 <h4 className="card-title  text-secondary name ">{item.name}</h4>
                 <p className="cardDescription">{item.card_description}</p>
                 <p className="card-text text-secondary " >{item.description}</p>
-                <button className="mt-5" onClick={addToCart}>agregar al carrito</button>
+                <button className="mt-1" onClick={addToCart}>agregar al carrito</button>
               </div>
            
 

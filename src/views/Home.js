@@ -10,10 +10,7 @@ const Home =() =>{
     
     const [loading, setLoading] = useState(true);
     const {products} = useContext(DataContext);
-  
-  
-
-
+    console.log(products)
 
 
     return(

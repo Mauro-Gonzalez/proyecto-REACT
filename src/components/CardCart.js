@@ -19,9 +19,9 @@ function CardCart({data}) {
   
   
     return (
-        <div key={data} className="bg-dark animate__animated animate__fadeInUp d-flex  flex-row">
+        <div key={data} className="bg-dark animate__animated animate__fadeInUp d-flex  flex-row m-3" style={{border:"2px solid black"}}>
         
-        <img src={data.img} alt="a wallpaper" className="card-img-top d-inline-block" style={{width:"200px"}} />
+        <img src={data.img} alt="a wallpaper" className="card-img-top d-inline-block" style={{width:"100px", margin:"5px"}} />
     
         <Link to={ `${data.categoty}/detail/${data.id} `} className="container  justify-content-center align-items-center h-100" style={{textDecoration:"none"}}>
         <h4 className="card-title d-inline-block text-primary">{data.name}</h4>
@@ -31,7 +31,7 @@ function CardCart({data}) {
        
        
     
-      <div className="d-inline-block">
+      <div className="d-inline-block mt-4 me-2">
       <button onClick={() => removeItem(data.id)}>borrar</button>
       </div>
     </div>

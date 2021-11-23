@@ -15,12 +15,6 @@ const Cart =() =>{
     const [{cart}, dispatch]=useStateValue();
    
 
-  const removeItem=(id)=>  dispatch({
-    
-  type:actionTypes.REMOVE_ITEM,
-  id:id
-})
-
 const clearCart=()=> dispatch({
   type:actionTypes.CLEAR_CART,
   cart:[]

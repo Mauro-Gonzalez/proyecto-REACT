@@ -20,7 +20,7 @@ const Navbar =() =>{
  <ReactBootstrap.Navbar bg="dark" expand="lg" variant="dark">
   <ReactBootstrap.Container style={{maxWidth: "initial"}}>
     <ReactBootstrap.Navbar.Brand ><Link to="/"><img src={logo} className="logo"></img></Link></ReactBootstrap.Navbar.Brand>
-    <ReactBootstrap.Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <ReactBootstrap.Navbar.Toggle aria-controls="basic-navbar-nav"/>
     <ReactBootstrap.Navbar.Collapse id="basic-navbar-nav">
       <ReactBootstrap.Nav className="ms-auto me-5">
         <ReactBootstrap.Nav.Link ><Link to="/"className="navlink">Home</Link></ReactBootstrap.Nav.Link>
