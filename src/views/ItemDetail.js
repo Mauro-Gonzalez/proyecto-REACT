@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useContext} from "react";
 import ItemCount from "../components/itemCount";
 import products from "../productsdata";
 import CartContext from "../context/cart/CartContext";

@@ -1,11 +1,12 @@
 
 import CartContext from "../context/cart/CartContext";
-
+import { useContext } from "react";
+import { StateContext } from "../StateProvider";
 
 
 const Cart =({}) =>{
   const { removeItem } = useContext(CartContext);
-
+const [{cart},setCart]=(StateContext)
 
 
 
