@@ -1,0 +1,32 @@
+.navbar{
+    align-items: center;
+    background: linear-gradient(rgb(33,37,41), rgba(0, 0, 0, 0.884));
+
+}
+
+
+
+.navbar ul li {
+    display: inline-block;
+    justify-content: space-between;
+    margin:5px 300px 5px 300px;
+   
+}
+
+
+
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+}
+
+.navbar a:hover{
+    color: white;
+}
+
+    
+

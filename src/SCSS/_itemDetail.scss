@@ -1,13 +1,28 @@
 .imgdetail {
     width: 400px !important;
     height: 400px;
-    position: absolute;
-    top: 15%;
-    margin-left: 2%;
-}
-
-.div-description{
     margin-top: 15%;
 }
 
+.div-description{
+    margin-top: 12% !important;
+}
 
+
+@media screen and (max-width: 1205px) {
+    .imgdetail{
+        width: 300px !important;
+        height: 300px;
+        margin-top: 8%;
+    }
+  }
+
+
+
+  @media screen and (max-width: 760px) {
+    .imgdetail{
+        width: 300px !important;
+        height: 250px;
+        margin-top: 8%;
+    }
+  }

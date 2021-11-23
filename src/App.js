@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Route , Switch} from "react-router-dom"
 import Navbar from "./components/Navbar";
 
 
-import "./SCSS/_general.scss";
+import "./App.css";
 
 //views//
 import Home from "./views/Home";

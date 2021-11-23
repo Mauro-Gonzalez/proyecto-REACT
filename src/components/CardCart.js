@@ -23,7 +23,7 @@ function CardCart({data}) {
         
         <img src={data.img} alt="a wallpaper" className="card-img-top d-inline-block" style={{width:"200px"}} />
     
-        <Link to={ `/detail/${data.id} `} className="container  justify-content-center align-items-center h-100" style={{textDecoration:"none"}}>
+        <Link to={ `${data.categoty}/detail/${data.id} `} className="container  justify-content-center align-items-center h-100" style={{textDecoration:"none"}}>
         <h4 className="card-title d-inline-block text-primary">{data.name}</h4>
         <p>{data.card_description}</p>
         </Link>

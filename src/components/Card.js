@@ -1,9 +1,7 @@
 import PropTypes from "prop-types";
-import "../SCSS/_Card.scss";
 
 
-
-
+import "./Card.css";
 
 
 
@@ -13,7 +11,7 @@ function Card({data}) {
     return (
         <div style={{width:"240px", height:"380px", borderRadius:"15px",border:"1px solid black"}} className="card text-center bg-dark animate__animated animate__fadeInUp ">
       <div>
-        <img src={data.img} alt="a wallpaper" className="card-img" />
+        <img src={data.img} alt="a wallpaper" className="card-img-top" style={{width:"200px", height:"200px"}} />
       </div>
       <div className="card-body text-light" style={{position:"relative"}}>
         <h4 className="card-title mt-1">{data.name}</h4>

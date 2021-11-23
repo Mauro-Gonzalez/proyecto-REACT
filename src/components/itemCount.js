@@ -1,6 +1,6 @@
 
 import React,{useState} from 'react';
-import "../SCSS/_itemCount.scss";
+import "./ItemCount.css";
 import { Link } from "react-router-dom";
 
 

@@ -2,26 +2,34 @@
 
 
 body {
-    font-family: 'Oxygen', sans-serif;
+  font-family: 'Oxygen', sans-serif;
 
-    height: 100vh;
-    background:linear-gradient(black,rgb(33,37,41));
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-attachment:fixed
+  height: 100vh;
+  background: linear-gradient(black, rgb(33, 37, 41));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed
+}
 
-   
-  } 
+p {
+  font-family: 'Roboto', sans-serif !important;
+  color: white !important;
 
-  p{
-    font-family: 'Roboto', sans-serif !important;
-    color: white !important;
-    
+}
+
+
+a {
+  color: rgb(253, 253, 253);
+  text-decoration: none;
+
+}
+
+@media screen and (max-width: 720px) {
+  p {
+    font-size: 13px !important;
   }
-  
-  
-  a {
-    color: rgb(253, 253, 253) ;
-    text-decoration: none;
-    
+
+  h4 {
+    font-size: 16px;
   }
+}

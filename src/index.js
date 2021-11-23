@@ -3,15 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import "bootstrap/dist/css/bootstrap.min.css";
-import {StateProvider} from "./StateProvider";
-import reducer, { initialState } from "./reducer";
+import CartState from "./context/cart/CartState"
 
 
 ReactDOM.render(
   <React.StrictMode>
-  <StateProvider initialState={initialState} reducer={reducer}>
+ <CartState>
     <App />
-  </StateProvider>
+ </CartState>
   </React.StrictMode>,
   document.getElementById('root')
 );

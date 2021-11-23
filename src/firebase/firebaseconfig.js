@@ -1,7 +1,6 @@
+
 import { initializeApp } from "firebase/app";
 import {getFirestore} from "firebase/firestore";
-
-
 
 
 const firebaseConfig = {
@@ -11,8 +10,8 @@ const firebaseConfig = {
   storageBucket: "legendarymotorsport-d2e98.appspot.com",
   messagingSenderId: "100409791167",
   appId: "1:100409791167:web:6b93af19932ce90b492c0a",
+  measurementId: "G-LW1B9HKP27"
 };
-
 
 
 const app = initializeApp(firebaseConfig);
