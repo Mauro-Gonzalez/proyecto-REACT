@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Route , Switch} from "react-router-dom"
 import Navbar from "./components/Navbar";
 
 
-import "./App.css";
+import "./SCSS/_general.scss";
 
 //views//
 import Home from "./views/Home";
@@ -29,7 +29,7 @@ class App extends Component {
           </header>
              <Route path="/" exact component={Home}/>
              <Route path="/Categorias"component={Categoria2}/>
-             <Route path="/detail/:id" component={ItemDetail}/>
+             <Route path="/:category/detail/:id" component={ItemDetail}/>
              <Route path="/Cart"component={Cart}/>
         </div>
         </Switch>

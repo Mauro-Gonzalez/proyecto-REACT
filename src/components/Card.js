@@ -1,17 +1,21 @@
 import PropTypes from "prop-types";
+import "../SCSS/_Card.scss";
+import { Link } from "react-router-dom";
 
 
-import "./Card.css";
+
 
 
 
 
 
 function Card({data}) {
+
     return (
-        <div style={{width:"240px", height:"380px", borderRadius:"15px",border:"1px solid black"}} className="card text-center bg-dark animate__animated animate__fadeInUp ">
+        <div className="cards text-center bg-dark animate__animated animate__fadeInUp ">
+          <Link to={ `/${data.category}/detail/${data.id} `} style={{textDecoration:"none"}}>
       <div>
-        <img src={data.img} alt="a wallpaper" className="card-img-top" style={{width:"200px", height:"200px"}} />
+        <img src={data.img} alt="a wallpaper" className="card-img" />
       </div>
       <div className="card-body text-light" style={{position:"relative"}}>
         <h4 className="card-title mt-1">{data.name}</h4>
@@ -22,6 +26,7 @@ function Card({data}) {
         </p>
         </div>
       </div>
+      </Link>
     </div>
   );
 }
@@ -29,8 +34,8 @@ function Card({data}) {
 Card.propTypes = {
   card_description: PropTypes.string.isRequired,
     price: PropTypes.string,
-    url: PropTypes.string,
-    imageSource: PropTypes.string
+    name: PropTypes.string,
+    img: PropTypes.string,
   };
   
 

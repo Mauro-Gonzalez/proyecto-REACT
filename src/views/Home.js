@@ -1,18 +1,30 @@
 
-import "./home.css"
+import "../SCSS/_home.scss";
+import {useContext,useState} from 'react';
 import  ItemListCointainter from "../components/ItemListConteiner";
-
-
+import { DataContext } from "../components/context/DataContext";
+import jsonproducts from "../productsdata";
 
 
 const Home =() =>{
     
+    const [loading, setLoading] = useState(true);
+    const {products} = useContext(DataContext);
+  
+  
+
+
+
 
     return(
         <>
-        <div className="background"></div>
+        <div className="background d-flex ">
+            <div className="overlay d-flex align-items-center justify-content-center">
+                <h2 className="content">HOLA MUNDO</h2>
+            </div>
+        </div>
         <div style={{background: "linear-gradient(black,rgb(33,37,41))"}}>
-           < ItemListCointainter tittle="tengo q hacer la vaina"/>
+           < ItemListCointainter items={products} tittle="tengo q hacer la vaina"/>
            </div>
          </>
     )
